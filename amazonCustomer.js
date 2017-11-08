@@ -80,7 +80,7 @@ function askContinueQuit(){
 function checkoutOrder(itemID, itemQuantity) {
     getTotalPrice(itemID, itemQuantity).then(function (value) {
         console.log("Your total is: $" + value);
-        connection.query("UPDATE products SET stock_quantity = stock_quantity - ? WHERE itemID = ?", [itemQuantity, itemID], function(error, result) {
+        connection.query("UPDATE products SET stock_quantity = stock_quantity - ?, product_sales = product_sales + ? WHERE itemID = ?", [itemQuantity, value, itemID], function(error, result) {
             if(error) throw error;
             askContinueQuit();
         });
