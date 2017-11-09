@@ -4,6 +4,7 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql");
 const clear = require("clear");
+const Table = require("cli-table");
 
 const connection = mysql.createConnection({
     host: "localhost",
@@ -114,10 +115,14 @@ function askQuantity(itemID) {
 
 function home() {
     connection.query("SELECT * FROM products", function(error, result) {
-        console.log("ID | PRODUCT NAME | DEPARTMENT NAME | PRICE | STOCK QUANTITY");
+        let productsTable = new Table({
+            head: ["ID", "PRODUCT NAME", "DEPARTMENT NAME", "PRICE", "STOCK QUANTITY"]
+            , colWidths: [5, 30, 30, 20, 20]
+        });
         for (let i = 0; i < result.length; i++) {
-            console.log(result[i].itemID + " | " + result[i].product_name + " | " + result[i].department_name + " | $" + result[i].price + " | " + result[i].stock_quantity);
+            productsTable.push([result[i].itemID, result[i].product_name, result[i].department_name, result[i].price, result[i].stock_quantity]);
         }
+        console.log(productsTable.toString());
         inquirer
             .prompt([
                 {

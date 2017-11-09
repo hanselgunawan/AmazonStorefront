@@ -4,6 +4,7 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql");
 const clear = require("clear");
+const Table = require("cli-table");
 
 const connection = mysql.createConnection({
     host: "localhost",
@@ -127,10 +128,14 @@ function askAddInventory() {
 function viewProduct(add_inventory_bool)
 {
     connection.query("SELECT * FROM products", function(error, result) {
-        console.log("ID | PRODUCT NAME | DEPARTMENT NAME | PRICE | STOCK QUANTITY");
+        let productTable = new Table({
+            head: ["ID", "PRODUCT NAME", "DEPARTMENT NAME", "PRICE", "STOCK QUANTITY"]
+            , colWidths: [5, 30, 30, 20, 20]
+        });
         for (let i = 0; i < result.length; i++) {
-            console.log(result[i].itemID + " | " + result[i].product_name + " | " + result[i].department_name + " | $" + result[i].price + " | " + result[i].stock_quantity);
+            productTable.push([result[i].itemID, result[i].product_name, result[i].department_name, result[i].price, result[i].stock_quantity]);
         }
+        console.log(productTable.toString());
         if(add_inventory_bool === false) askGoBack();
         else askAddInventory();
     });
@@ -139,10 +144,14 @@ function viewProduct(add_inventory_bool)
 function viewLowInventory()
 {
     connection.query("SELECT * FROM products WHERE stock_quantity<5", function(error, result) {
-        console.log("ID | PRODUCT NAME | DEPARTMENT NAME | PRICE | STOCK QUANTITY");
+        let productTable = new Table({
+            head: ["ID", "PRODUCT NAME", "DEPARTMENT NAME", "PRICE", "STOCK QUANTITY"]
+            , colWidths: [5, 30, 30, 20, 20]
+        });
         for (let i = 0; i < result.length; i++) {
-            console.log(result[i].itemID + " | " + result[i].product_name + " | " + result[i].department_name + " | $" + result[i].price + " | " + result[i].stock_quantity);
+            productTable.push([result[i].itemID, result[i].product_name, result[i].department_name, result[i].price, result[i].stock_quantity]);
         }
+        console.log(productTable.toString());
         askGoBack();
     });
 }
