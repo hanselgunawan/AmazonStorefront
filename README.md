@@ -24,7 +24,7 @@ Features that can be accessed by Customer:
 
 ##### Get Product List
 Here's the demo of how customer can get the product list:
-
+![](https://imgur.com/a/FZBya)
 
 The code below calls the [Giphy API](https://developers.giphy.com/):
 
