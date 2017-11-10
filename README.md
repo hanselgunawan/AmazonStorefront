@@ -28,7 +28,6 @@ Features that can be accessed by Customer:
 2. Type `node amazonCustomer.js`
 3. Press `ENTER`
 
-##### Demo
 ![](https://imgur.com/txeMDxj.gif)
 
 #### Purchase a Product
@@ -42,7 +41,6 @@ Features that can be accessed by Customer:
 7. Press `ENTER`
 8. It will display the `total amount`
 
-##### Demo
 ![](https://imgur.com/BtJBSKk.gif)
 
 ### Manager
@@ -60,8 +58,7 @@ Features that can be accessed by Manager:
 4. Choose `View Products for Sale` on main menu
 5. Press `ENTER`
 
-##### Demo
-![]()
+![](https://imgur.com/Vp7zkpj.gif)
 
 #### View Low Inventory
 ##### Steps to view low inventory
@@ -71,8 +68,7 @@ Features that can be accessed by Manager:
 4. Choose `View Low Inventory` on main menu
 5. Press `ENTER`
 
-##### Demo
-![]()
+![](https://imgur.com/YOP9FPp.gif)
 
 #### Add Quantity to the Inventory
 ##### Steps to add quantity to the inventory
@@ -87,8 +83,7 @@ Features that can be accessed by Manager:
 9. Press `ENTER`
 10. `<quantity> items has been successfully added to item ID: <product ID> !` message will be displayed
 
-##### Demo
-![]()
+![](https://imgur.com/PKnNGAi.gif)
 
 #### Add New Product
 ##### Steps to add new product
@@ -107,8 +102,7 @@ Features that can be accessed by Manager:
 13. Press `ENTER`
 14. `<product name> has beed added to database!` message will be displayed
 
-##### Demo
-![]()
+![](https://imgur.com/Fxm2Yqu.gif)
 
 ### Supervisor
 Features that can be accessed by Supervisor:
@@ -123,7 +117,6 @@ Features that can be accessed by Supervisor:
 4. Choose `View Product Sales by Department` on main menu
 5. Press `ENTER`
 
-##### Demo
 ![]()
 
 #### Create New Department
@@ -139,7 +132,6 @@ Features that can be accessed by Supervisor:
 9. Press `ENTER`
 10. `<department name> department has been added to database!` message will be displayed
 
-##### Demo
 ![]()
 
 The code below calls the [Giphy API](https://developers.giphy.com/):
