@@ -22,7 +22,7 @@ Features that can be accessed by Customer:
 * Get product list
 * Purchase a product
 
-##### Get Product List
+#### Get Product List
 Here's the demo of how customer can get the product list:
 ![](https://imgur.com/txeMDxj.gif)
 
