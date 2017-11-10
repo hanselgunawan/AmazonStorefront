@@ -43,7 +43,7 @@ Features that can be accessed by Customer:
 8. It will display the total amount
 
 ##### Demo
-![](https://imgur.com/Q6RHQG8.gif)
+![](https://imgur.com/BtJBSKk.gif)
 
 The code below calls the [Giphy API](https://developers.giphy.com/):
 
