@@ -23,7 +23,12 @@ Features that can be accessed by Customer:
 * Purchase a product
 
 #### Get Product List
-Here's the demo of how customer can get the product list:
+##### Steps to get product list
+1. Open your terminal
+2. Type `node amazonCustomer.js`
+3. Press `ENTER`
+
+##### Demo
 ![](https://imgur.com/txeMDxj.gif)
 
 The code below calls the [Giphy API](https://developers.giphy.com/):
