@@ -31,6 +31,20 @@ Features that can be accessed by Customer:
 ##### Demo
 ![](https://imgur.com/txeMDxj.gif)
 
+#### Purchase a Product
+##### Steps to purchase a product
+1. Open your terminal
+2. Type `node amazonCustomer.js`
+3. Press `ENTER`
+4. Input the product ID that you want to purchase
+5. Press `ENTER`
+6. Input the quantity of desired product
+7. Press `ENTER`
+8. It will display the total amount
+
+##### Demo
+![](https://imgur.com/Q6RHQG8.gif)
+
 The code below calls the [Giphy API](https://developers.giphy.com/):
 
 ```javascript
