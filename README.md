@@ -23,7 +23,7 @@ Features that can be accessed by Customer:
 * Purchase a product
 
 #### Get Product List
-##### Steps to get product list:
+##### Steps to get product list
 1. Open your terminal
 2. Type `node amazonCustomer.js`
 3. Press `ENTER`
@@ -31,7 +31,7 @@ Features that can be accessed by Customer:
 ![](https://imgur.com/txeMDxj.gif)
 
 #### Purchase a Product
-##### Steps to purchase a product:
+##### Steps to purchase a product
 1. Open your terminal
 2. Type `node amazonCustomer.js`
 3. Press `ENTER`
@@ -51,7 +51,7 @@ Features that can be accessed by Manager:
 * Add New Product
 
 #### View Products for Sale
-##### Steps to see products for sale:
+##### Steps to see products for sale
 1. Open your terminal
 2. Type `node amazonManager.js`
 3. Press `ENTER`
@@ -61,7 +61,7 @@ Features that can be accessed by Manager:
 ![](https://imgur.com/Vp7zkpj.gif)
 
 #### View Low Inventory
-##### Steps to view low inventory:
+##### Steps to view low inventory
 1. Open your terminal
 2. Type `node amazonManager.js`
 3. Press `ENTER`
@@ -71,7 +71,7 @@ Features that can be accessed by Manager:
 ![](https://imgur.com/YOP9FPp.gif)
 
 #### Add Quantity to the Inventory
-##### Steps to add quantity to the inventory:
+##### Steps to add quantity to the inventory
 1. Open your terminal
 2. Type `node amazonManager.js`
 3. Press `ENTER`
@@ -86,7 +86,7 @@ Features that can be accessed by Manager:
 ![](https://imgur.com/PKnNGAi.gif)
 
 #### Add New Product
-##### Steps to add new product:
+##### Steps to add new product
 1. Open your terminal
 2. Type `node amazonManager.js`
 3. Press `ENTER`
@@ -110,17 +110,17 @@ Features that can be accessed by Supervisor:
 * Create New Department
 
 #### View Product Sales by Department
-##### Steps to see product sales by department:
+##### Steps to see product sales by department
 1. Open your terminal
 2. Type `node amazonSupervisor.js`
 3. Press `ENTER`
 4. Choose `View Product Sales by Department` on main menu
 5. Press `ENTER`
 
-![]()
+![](https://imgur.com/dMfbbcJ.gif)
 
 #### Create New Department
-##### Steps to create new department:
+##### Steps to create new department
 1. Open your terminal
 2. Type `node amazonSupervisor.js`
 3. Press `ENTER`
@@ -132,7 +132,7 @@ Features that can be accessed by Supervisor:
 9. Press `ENTER`
 10. `<department name> department has been added to database!` message will be displayed
 
-![]()
+![](https://imgur.com/JemjfVH.gif)
 
 The code below calls the [Giphy API](https://developers.giphy.com/):
 
