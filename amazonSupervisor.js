@@ -37,7 +37,7 @@ function viewProductSalesByDep() {
             , colWidths: [20, 30, 20, 20, 20]
         });
         for (let i = 0; i < result.length; i++) {
-            productSalesTable.push([i+1, result[i].department_name, result[i].over_head_costs, result[i].product_sales, result[i].total_profit]);
+            productSalesTable.push([i+1, result[i].department_name, "$" + result[i].over_head_costs, "$" + result[i].product_sales, "$" + result[i].total_profit]);
         }
         console.log(productSalesTable.toString());
         home();
@@ -47,7 +47,7 @@ function viewProductSalesByDep() {
 function insertDep(dep_name, over_head) {
     connection.query("INSERT INTO departments(department_name, over_head_costs) VALUES(?,?)",[dep_name, over_head], function(error, result) {
         if(error) throw error;
-        console.log(dep_name + " has been added to database!");
+        console.log(dep_name + " department has been added to database!");
         inquirer
             .prompt([
                 {

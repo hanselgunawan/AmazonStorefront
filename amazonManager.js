@@ -74,7 +74,8 @@ function addInventory(itemID, total_item)
 {
     connection.query("UPDATE products SET stock_quantity = stock_quantity + ? WHERE itemID = ?", [total_item, itemID], function(error, result) {
         if(error) throw error;
-        console.log(total_item + " items has been successfully added to item ID: " + itemID + " !");
+        if(total_item>1)console.log(total_item + " items has been successfully added to item ID: " + itemID + " !");
+        else console.log(total_item + " item has been successfully added to item ID: " + itemID + " !");
         askGoBack();
     });
 }
@@ -133,7 +134,7 @@ function viewProduct(add_inventory_bool)
             , colWidths: [5, 30, 30, 20, 20]
         });
         for (let i = 0; i < result.length; i++) {
-            productTable.push([result[i].itemID, result[i].product_name, result[i].department_name, result[i].price, result[i].stock_quantity]);
+            productTable.push([result[i].itemID, result[i].product_name, result[i].department_name, "$" + result[i].price, result[i].stock_quantity]);
         }
         console.log(productTable.toString());
         if(add_inventory_bool === false) askGoBack();
@@ -149,7 +150,7 @@ function viewLowInventory()
             , colWidths: [5, 30, 30, 20, 20]
         });
         for (let i = 0; i < result.length; i++) {
-            productTable.push([result[i].itemID, result[i].product_name, result[i].department_name, result[i].price, result[i].stock_quantity]);
+            productTable.push([result[i].itemID, result[i].product_name, result[i].department_name, "$" + result[i].price, result[i].stock_quantity]);
         }
         console.log(productTable.toString());
         askGoBack();

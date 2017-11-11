@@ -120,7 +120,7 @@ function home() {
             , colWidths: [5, 30, 30, 20, 20]
         });
         for (let i = 0; i < result.length; i++) {
-            productsTable.push([result[i].itemID, result[i].product_name, result[i].department_name, result[i].price, result[i].stock_quantity]);
+            productsTable.push([result[i].itemID, result[i].product_name, result[i].department_name, "$" + result[i].price, result[i].stock_quantity]);
         }
         console.log(productsTable.toString());
         inquirer
