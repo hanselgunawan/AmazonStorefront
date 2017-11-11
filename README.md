@@ -7,8 +7,8 @@ This is a CLI storefront application that can be used to manage inventory, grab 
  * Display available products
  * Add a stock quantity to a product
  * Add new product to the inventory
+ * Add new department
  * Get total sales from each departments
- * Pause and play the displayed GIF
  * Display products that have the quantity less than five
 
 ## Access Rights
