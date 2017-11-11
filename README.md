@@ -134,38 +134,8 @@ Features that can be accessed by Supervisor:
 
 ![](https://imgur.com/JemjfVH.gif)
 
-The code below calls the [Giphy API](https://developers.giphy.com/):
-
-```javascript
-let query = {
-        text: $(event.target).text(),
-        offset: 0,
-        request() {
-            return `${BASE_URL}${ENDPOINT}?	q=${this.text}&limit=${LIMIT}&offset=${this.offset}&api_key=${PUBLIC_KEY}`;
-        },
-        fetch(callback) {
-            $.getJSON(this.request())
-                .success(data => {
-                    results = data.data;
-                    if (results.length) {
-                        callback(results);
-                    } else {
-                        callback('');
-                    }
-                })
-                .fail(error => {
-                    console.log(error);
-                });
-        }
-    };
-```
-
-### Stuff used to make this:
-
- * [Giphy API](https://developers.giphy.com/)
- * [jQuery](https://api.jquery.com/)
- * [JavaScript](https://www.w3schools.com/js/)
-
-### Here's the link to my app:
-
-[https://hanselgunawan.github.io/Giphy-API](https://hanselgunawan.github.io/Giphy-API)
+## NPM packages used:
+* [Inquirer](https://www.npmjs.com/package/inquirer): to get user input
+* [MySQL](https://www.npmjs.com/package/mysql): for database connection
+* [Clear](https://www.npmjs.com/package/clear): to clear CLI screen
+* [CLI Table](https://www.npmjs.com/package/cli-table): to create a table
